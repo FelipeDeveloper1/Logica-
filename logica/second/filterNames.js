@@ -1,11 +1,11 @@
 const Filtername = function() {
-        let names = ["felipe", " Max ", "FIONA", "Saphira", "FELIPE"]
-        this.names = names
+        let names = ["felipe", " Max ", "    FIONA  ", "Saphira", "   FELIPE   "]
         let CleanNames = []
         this.callNames = () => {
             names.forEach((value) => {
-                if (!CleanNames.includes(value.toLowerCase())) {
-                    CleanNames.push(value.toLowerCase())
+                if (!CleanNames.includes(value.toLowerCase().trim())) {
+                    CleanNames.push(value.toLowerCase().trim())
+
                 }
             })
             console.log(CleanNames)
