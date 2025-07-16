@@ -5,8 +5,6 @@ const Filtername = function() {
         names.forEach((value) => {
             if (!CleanNames.includes(value.toLowerCase().trim())) {
                 CleanNames.push(value.toLowerCase().trim())
-
-
             }
         })
         console.log(CleanNames.sort())
